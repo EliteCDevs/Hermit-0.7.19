@@ -1,0 +1,43 @@
+{
+  "name": "hermit-astrology",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "open": "node scripts/open-app.mjs",
+    "start": "node scripts/dev-server.mjs --production",
+    "build": "vite build",
+    "postinstall": "node scripts/verify-swiss-bundle.mjs",
+    "lint": "tsc --noEmit && tsc --noEmit -p tsconfig.api.json",
+    "test": "node --import tsx --test tests/bundled-swiss.test.mjs tests/daily-client.test.mjs tests/phase-cycle.test.mjs tests/mood-log.test.mjs tests/saved-chart.test.mjs tests/app-journey.test.tsx",
+    "test:browser": "playwright test"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.14",
+    "@vercel/node": "^5.7.10",
+    "@vitejs/plugin-react": "^5.0.4",
+    "@vvo/tzdb": "^6.198.0",
+    "astronomy-engine": "^2.1.19",
+    "dotenv": "^17.2.3",
+    "express": "^4.21.2",
+    "lucide-react": "^0.546.0",
+    "motion": "^12.23.24",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "sweph": "2.10.3-7",
+    "vite": "^6.2.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.14.0",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "jsdom": "^26.1.0",
+    "tailwindcss": "^4.1.14",
+    "tsx": "^4.21.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0",
+    "esbuild": "0.27.7"
+  }
+}

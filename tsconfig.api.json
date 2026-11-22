@@ -1,0 +1,30 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "types": [
+      "node"
+    ]
+  },
+  "include": [
+    "api/compute-chart.ts",
+    "api/famous-matches.ts",
+    "api/_lib/**/*.ts",
+    "scripts/verify-ephemeris.ts",
+    "src/lib/similarity.ts",
+    "api/forum.ts",
+    "api/transits-today.ts",
+    "api/people.ts",
+    "api/local-reading.ts",
+    "api/astro-events.ts",
+    "api/locations.ts",
+    "api/access.ts",
+    "api/mp-create-charge.ts",
+    "api/mp-status.ts",
+    "api/mp-webhook.ts",
+    "api/daily-sky.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "catalog": "HYG Database 4.1, magnitude-limited derivative",
+  "recordCount": 8920,
+  "filter": {
+    "apparentVisualMagnitudeMaximum": 6.5,
+    "excludedSourceIds": [
+      0
+    ],
+    "sunExclusionReason": "Sun is computed separately"
+  },
+  "epochJulianYear": 2000.0,
+  "equinox": "J2000",
+  "fields": [
+    "id",
+    "hip",
+    "name",
+    "aliases",
+    "ra",
+    "dec",
+    "mag",
+    "bv",
+    "pmra",
+    "pmdec"
+  ],
+  "units": {
+    "id": "HYG numeric primary key",
+    "hip": "Hipparcos numeric identifier or null",
+    "ra": "hours",
+    "dec": "degrees",
+    "mag": "apparent visual magnitude",
+    "bv": "B minus V color index or null",
+    "pmra": "milliarcseconds/year; mu_alpha*cos(delta)",
+    "pmdec": "milliarcseconds/year"
+  },
+  "missingValues": "Unknown numeric metadata remains null. Missing proper motion must not be treated as a documented zero.",
+  "properMotionConvention": "pmra is tangential mu_alpha*cos(delta). Propagate tangent vectors or divide by cos(delta) when calculating coordinate RA drift; avoid pole singularities. HYG Cartesian velocities independently confirm the convention.",
+  "source": {
+    "project": "https://codeberg.org/astronexus/hyg",
+    "archive": "https://github.com/astronexus/HYG-Database",
+    "commit": "c7f7f883fe678cc7680169a50ccd7dcc49b060ce",
+    "url": "https://raw.githubusercontent.com/astronexus/HYG-Database/c7f7f883fe678cc7680169a50ccd7dcc49b060ce/hyg/CURRENT/hygdata_v41.csv",
+    "sha256": "d9f69fd86bbf90a4e4d52b4c5c53eacfa6dfc0bfdef85bfd94f095e0bebe4ebd",
+    "bytes": 33932548
+  },
+  "generatedAsset": {
+    "path": "data/stars.json",
+    "sha256": "a91332bbeefb7e7e0474a31228b510dcf7b75f51d5fceabd2aa1974912e7cad8",
+    "bytes": 690170,
+    "gzipBytes": 281588
+  },
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "licenseFile": "data/LICENSE-stars.txt",
+  "attribution": "Star data: HYG Database v4.1 by David Nash / Astronexus and contributors.",
+  "modifications": "Filtered visual magnitude <=6.5; excluded Sun; retained selected fields; compact array encoding; standardized readable Bayer names and aliases; rounded RA/Dec to original six decimals, magnitude/proper motion to two, color index to three. Data derivative remains CC BY-SA 4.0.",
+  "reproduce": "python3 scripts/build-star-catalog.py /external/path/hygdata_v41.csv --license /external/path/cc-by-sa-4.0-legalcode.txt",
+  "notices": [
+    "Stars share catalog epoch/equinox J2000. Proper motion and epoch transformations are runtime responsibilities.",
+    "Source apparent magnitudes can vary for variable stars; the magnitude cutoff does not guarantee actual naked-eye visibility.",
+    "Proper names for named secondary components can be unofficial as described in upstream HYG 4.1 notes."
+  ]
+}

@@ -1,0 +1,7 @@
+In a terminal open this Hermit folder and run:
+
+  node unpack-source.mjs
+  npm ci
+  npm run open
+
+The source files are stored together in source-files.json to meet the upload limit. The unpack command restores the original source, tests and scripts. Run it once in a fresh extracted copy.

@@ -1,0 +1,12 @@
+{
+  "capturedAt": "2026-11-22T00:52:28.936720+00:00",
+  "source": "https://download.geonames.org/export/dump/cities500.zip",
+  "adminSource": "https://download.geonames.org/export/dump/admin1CodesASCII.txt",
+  "sourceArchiveSha256": "86c76d7f3eec04b51650877da433a1dd5c384c31e99c940300c1b37cb716a649",
+  "cityFileSha256": "3f03d125c0535d1322486a52fdc91c7d52a9636e1713d43321e2b47bca3e36a4",
+  "adminFileSha256": "2e4867f5397acb056ea26377601b57af37cb4c81399770225018e9e439e91ad3",
+  "sourceRecords": 237330,
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "attribution": "GeoNames geographical database, https://www.geonames.org/"
+}

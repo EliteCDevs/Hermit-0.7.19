@@ -1,0 +1,29 @@
+{
+  "downloadedAt": "2026-10-12T05:35:11.504Z",
+  "files": [
+    {
+      "name": "sepl_12.se1",
+      "source": "https://raw.githubusercontent.com/aloistr/swisseph/master/ephe/sepl_12.se1",
+      "bytes": 483743,
+      "sha256": "8dccace2557601a223d5f8a7cf64de4e6bbb8a82b9b130b95a54d49adfbe546d"
+    },
+    {
+      "name": "semo_12.se1",
+      "source": "https://raw.githubusercontent.com/aloistr/swisseph/master/ephe/semo_12.se1",
+      "bytes": 1305932,
+      "sha256": "1c65fdbb854f350d3de36afc3e4ac126a53f360ae4f6dcb57beed7c690e7eb61"
+    },
+    {
+      "name": "sepl_18.se1",
+      "source": "https://raw.githubusercontent.com/aloistr/swisseph/master/ephe/sepl_18.se1",
+      "bytes": 484061,
+      "sha256": "ca1393ceab3a44fbc895887cf789c68819ae6a1cbc9b22225872dbe4ccd99a66"
+    },
+    {
+      "name": "semo_18.se1",
+      "source": "https://raw.githubusercontent.com/aloistr/swisseph/master/ephe/semo_18.se1",
+      "bytes": 1304771,
+      "sha256": "1ca07bd67c24374d77226180c20a4f9996cba013697894810518e7eb582ca4f7"
+    }
+  ]
+}
